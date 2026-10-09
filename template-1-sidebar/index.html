@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Portfolio of Your Name, AI/ML engineer.">
+<title>Your Name | AI/ML Engineer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script>try{var t=localStorage.getItem('theme');document.documentElement.dataset.theme=t||(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light')}catch(e){}</script>
+</head>
+<body>
+<!-- EDIT GUIDE: replace "Your Name", the text in each section, the # links, you@email.com,
+     and YOUR_ACCESS_KEY (free key from web3forms.com) in the contact form. -->
+<button class="menu-btn" id="menu" aria-label="Open menu" aria-expanded="false" aria-controls="side"><i></i><i></i><i></i></button>
+
+<aside id="side">
+  <div>
+    <h1 class="name">Your Name</h1>
+    <p class="role">AI/ML Engineer (Fresher)<br>City, Country</p>
+  </div>
+  <nav aria-label="Main">
+    <a href="#top">Home</a><a href="#about">About</a><a href="#skills">Skills</a>
+    <a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#contact">Contact</a>
+  </nav>
+  <div class="side-foot">
+    <button class="theme" id="theme" aria-pressed="false"><span>Dark mode</span></button>
+    <div class="links"><a href="#">GitHub</a><a href="#">LinkedIn</a><a href="mailto:you@email.com">Email</a></div>
+  </div>
+</aside>
+
+<main>
+  <header id="top" class="hero">
+    <div class="hero-bg" aria-hidden="true"></div>
+    <p class="hi">Hi, I'm Your Name.</p>
+    <h2>I build <span id="tw">machine learning apps</span><span class="cur" aria-hidden="true"></span></h2>
+    <p class="lead">One or two sentences on what you make and the kind of role you want. Keep it specific and honest.</p>
+    <div class="cta"><a class="btn primary" href="#projects">View my work</a><a class="btn" href="#contact">Get in touch</a></div>
+  </header>
+
+  <section id="about">
+    <h2 class="sec">About</h2>
+    <p>Write a short paragraph: what you studied, what you build, and what you want to work on next. Mention real tools and real projects.</p>
+    <p>Add a second paragraph if you like: how you work, what you are learning now, or what you enjoy outside of code.</p>
+  </section>
+
+  <section id="skills">
+    <h2 class="sec">Skills</h2>
+    <div class="skills">
+      <div><h3>Languages</h3><ul class="tags"><li>Python</li><li>SQL</li><li>JavaScript</li></ul></div>
+      <div><h3>ML and data</h3><ul class="tags"><li>scikit-learn</li><li>pandas</li><li>NumPy</li><li>Hugging Face</li></ul></div>
+      <div><h3>Backend</h3><ul class="tags"><li>FastAPI</li><li>Docker</li><li>REST APIs</li></ul></div>
+      <div><h3>Tools</h3><ul class="tags"><li>Git</li><li>GitHub</li><li>Streamlit</li></ul></div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <h2 class="sec">Experience</h2>
+    <ol class="timeline">
+      <li><time>2026</time><h3>Role or degree title</h3><p class="org">Company or university</p><p>One or two lines on what you did and learned. Only list real experience.</p></li>
+      <li><time>2025</time><h3>Internship, course, or project</h3><p class="org">Organisation</p><p>One or two lines on what you did and learned.</p></li>
+      <li><time>2022</time><h3>Education</h3><p class="org">University name</p><p>Degree, field, and anything worth noting.</p></li>
+    </ol>
+  </section>
+
+  <section id="projects">
+    <h2 class="sec">Projects</h2>
+    <div class="grid">
+      <article class="card wide"><h3>Project One</h3><p>What it does, who it is for, and what you built. Link to the live demo and the repo.</p><ul class="tags"><li>Python</li><li>FastAPI</li></ul><p class="pl"><a href="#">Live demo</a><a href="#">GitHub</a></p></article>
+      <article class="card"><h3>Project Two</h3><p>What it does and the main tech used.</p><ul class="tags"><li>scikit-learn</li><li>Streamlit</li></ul><p class="pl"><a href="#">GitHub</a></p></article>
+      <article class="card"><h3>Project Three</h3><p>What it does and the main tech used.</p><ul class="tags"><li>NLP</li><li>Transformers</li></ul><p class="pl"><a href="#">GitHub</a></p></article>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2 class="sec">Contact</h2>
+    <p>Have a role, a project, or a question? Send a message and I will reply by email.</p>
+    <form id="form" action="https://api.web3forms.com/submit" method="POST" novalidate>
+      <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY">
+      <input type="hidden" name="from_name" value="Portfolio contact form">
+      <input type="checkbox" name="botcheck" class="bot" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <div class="row">
+        <label>Name<input name="name" required autocomplete="name"></label>
+        <label>Email<input name="email" type="email" required autocomplete="email"></label>
+      </div>
+      <label>Message<textarea name="message" rows="5" required></textarea></label>
+      <button class="btn primary" type="submit">Send message</button>
+      <p id="status" role="status"></p>
+    </form>
+    <footer>© <span id="yr">2026</span> Your Name</footer>
+  </section>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

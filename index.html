@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Portfolio Templates</title>
+<meta name="description" content="Five free portfolio website templates in plain HTML, CSS and JavaScript.">
+<style>
+:root{--bg:#F5F6FA;--card:#fff;--ink:#14162B;--mute:#5B6080;--line:#DADDEB;--acc:#4F46E5}
+@media(prefers-color-scheme:dark){:root{--bg:#0C0E1A;--card:#151829;--ink:#ECEEFA;--mute:#9AA0C4;--line:#262B47;--acc:#8B93FF}}
+*{box-sizing:border-box;margin:0}
+body{font:17px/1.6 system-ui,-apple-system,"Segoe UI",sans-serif;background:var(--bg);color:var(--ink);padding:8vh 6vw}
+main{max-width:1000px;margin:auto}
+h1{font-size:clamp(2.2rem,6vw,3.6rem);letter-spacing:-.03em;line-height:1.05}
+.lead{color:var(--mute);max-width:56ch;margin:14px 0 40px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
+a.card{display:block;text-decoration:none;color:inherit;background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden;transition:transform .2s,box-shadow .2s,border-color .2s}
+a.card:hover,a.card:focus-visible{transform:translateY(-4px);border-color:var(--acc);box-shadow:0 18px 40px -20px var(--acc);outline:none}
+.sw{height:96px}
+.b{padding:16px 18px 20px}
+.b h2{font-size:1.2rem}
+.b p{color:var(--mute);font-size:.95rem;margin-top:4px}
+footer{margin-top:44px;color:var(--mute);font-size:.9rem}
+footer a{color:var(--acc)}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+<main>
+  <h1>Portfolio Templates</h1>
+  <p class="lead">Five responsive portfolio websites in plain HTML, CSS and JavaScript. Each has About, Skills, Experience, Projects and Contact sections. Open one to see it live.</p>
+  <div class="grid">
+    <a class="card" href="template-1-sidebar/"><div class="sw" style="background:linear-gradient(135deg,#EEF2F6,#D9441B)"></div><div class="b"><h2>1. Sidebar</h2><p>Clean sidebar layout with a typewriter hero and light/dark mode.</p></div></a>
+    <a class="card" href="template-2-terminal/"><div class="sw" style="background:linear-gradient(135deg,#0E1621,#FFB454)"></div><div class="b"><h2>2. Terminal</h2><p>An interactive command-line portfolio with a classic view.</p></div></a>
+    <a class="card" href="template-3-bold/"><div class="sw" style="background:linear-gradient(135deg,#2A4BFF,#FFD60A)"></div><div class="b"><h2>3. Bold</h2><p>Giant type, cursor effects and six colour themes.</p></div></a>
+    <a class="card" href="template-4-notebook/"><div class="sw" style="background:linear-gradient(135deg,#07070F,#22D3EE 55%,#F472B6)"></div><div class="b"><h2>4. Notebook</h2><p>A Jupyter-style notebook with a skills graph and a neural-network background.</p></div></a>
+    <a class="card" href="template-5-desktop/"><div class="sw" style="background:linear-gradient(135deg,#FFD3C2,#BCD3FF 50%,#C4F4DC)"></div><div class="b"><h2>5. Desktop</h2><p>A desktop with draggable windows, a dock and wallpapers.</p></div></a>
+  </div>
+  <footer>Free to use under the <a href="LICENSE">MIT license</a>. Source on <a href="https://github.com/Omkar210404/portfolio-templates">GitHub</a>.</footer>
+</main>
+</body>
+</html>

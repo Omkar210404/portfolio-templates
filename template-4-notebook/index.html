@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Portfolio of Your Name, AI/ML engineer, as a notebook.">
+<title>Your Name | Portfolio Notebook</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script>try{var t=localStorage.getItem('nb-theme');document.documentElement.dataset.theme=t||'dark'}catch(e){}</script>
+</head>
+<body>
+<canvas id="net" aria-hidden="true"></canvas><div id="spot" aria-hidden="true"></div>
+<!-- EDIT GUIDE: your content lives in the DATA object at the top of script.js.
+     For the contact form, replace YOUR_ACCESS_KEY in script.js (free key at web3forms.com). -->
+<header class="tb">
+  <span class="fn" id="fn">your-name-portfolio.ipynb</span>
+  <span class="kern" id="kern" role="status"><i></i><b id="kst">Python 3 · idle</b></span>
+  <div class="btns">
+    <button type="button" id="runAll">Run all</button>
+    <button type="button" id="clear">Clear outputs</button>
+    <button type="button" id="theme" aria-pressed="false">Dark</button>
+  </div>
+</header>
+<main id="nb" aria-label="Portfolio notebook"></main>
+<noscript><p style="padding:2rem">This portfolio is an interactive notebook and needs JavaScript. Contact: you@email.com</p></noscript>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en" data-theme="amber">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Interactive terminal portfolio of Your Name, AI/ML engineer.">
+<title>Your Name | Terminal Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- EDIT GUIDE: all your content lives in the DATA object at the top of script.js. -->
+<canvas id="rain" aria-hidden="true"></canvas>
+
+<div class="win" id="win">
+  <div class="bar">
+    <span class="dots" aria-hidden="true"><i></i><i></i><i></i></span>
+    <span class="title">visitor@portfolio: ~</span>
+    <span class="tools">
+      <select id="themeSel" aria-label="Colour theme"><option>amber</option><option>green</option><option>cyan</option><option>light</option></select>
+      <button id="classicBtn" type="button">Classic view</button>
+    </span>
+  </div>
+  <div class="screen" id="screen" role="log" aria-live="polite"></div>
+  <div class="chips" id="chips" aria-label="Quick commands"></div>
+  <div class="prompt">
+    <label for="cmd" class="ps">visitor@portfolio:~$</label>
+    <input id="cmd" autocomplete="off" autocapitalize="off" spellcheck="false" aria-label="Type a command, or press Tab to complete">
+  </div>
+</div>
+
+<main id="classic" hidden></main>
+<noscript><p style="padding:2rem;font-family:monospace">This portfolio is an interactive terminal and needs JavaScript. Contact: you@email.com</p></noscript>
+<script src="script.js"></script>
+</body>
+</html>
